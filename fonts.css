@@ -1,21 +1,18 @@
 @font-face {
-    font-family: "BebasNeueBold";
-    src: url("fonts/BebasNeueBold.ttf");
+    font-family: "Montserrat-ExtraBold";
+    src: url("fonts/Montserrat/static/Montserrat-ExtraBold.ttf");
 }
 
 @font-face {
-    font-family: "OpenSans";
-    src: url("fonts/OpenSans-Regular.ttf");
+    font-family: "Nunito-Regular";
+    src: url("fonts/Nunito/static/Nunito-Regular.ttf");
 }
 
 @font-face {
-    font-family: "OpenSans-Bold";
-    src: url("fonts/OpenSans-Bold.ttf");
+    font-family: "Nunito-Bold";
+    src: url("fonts/Nunito/static/Nunito-Bold.ttf");
 }
 
-@font-face {
-    font-family: "OpenSans-ExtraBold";
-    src: url("fonts/OpenSans-ExtraBold.ttf");
-}
+
 
 
