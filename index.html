@@ -11,73 +11,211 @@
 
 <body>
     <div id="wrapper">
-
-        <!--Start header-->
-        <!--<header class="container container_header">
-           <div class="header-row1">
-            <div class="header-logo">
-                <img src="image/revo_logo.png">
-            </div>
-             
-             
-           </div>
-           <div class="header-row2">
-            
-           </div>
-           <div class="header-row3">
-
-           </div>
-           <div class="header-title">
-            <p class="header-h1">&nbspYOUR<br><span class="back-color">&nbspPERSONALIZED&nbsp</span><br>&nbspCOFFEE</p>  
-           </div>
-        </header>-->
-        <!--End header-->
         <!--Start header-->
         <header class="container container_header">
-            <video autoplay muted loop id="myVideo">
-                <source src="coffee.mp4" type="video/mp4">
-            </video>
-            <div class="header__content">
-                <div class="header__left-bar">
-                    <div class="header__logo">
-                        <img src="image/revo_logo.png">
-                    </div>
-                </div>
+            <div class="header__data">
+                <!-- Фон будет абсолютно спозиционирован относительно header__data -->
                 <div class="header__background">
-                    
+                    <div class="header__background_left"></div>
+                    <div class="header__background_center"></div>
+                    <!-- Видео можно включить вместо центрального фона -->
+                    <!--<video autoplay muted loop id="myVideo">
+                        <source src="coffee.mp4" type="video/mp4">
+                    </video>-->
+                    <div class="header__background_right"></div>
                 </div>
-                <div class="header__button-play">
-                    <!-- Use a button to pause/play the video with JavaScript -->
-                    <img src="image/BTN_PLAY.png" id="myBtn" onclick="myFunction()">
-                </div>
-                
-                <div class="header__menu">
-                    <div class="header__cart">
-                        <img src="image/cart.png">
+                <!-- Контент будет абсолютно спозиционирован относительно header__data -->
+                <div class="header__content">
+                    <div class="header__content-left">
+                        <div class="header__left-bar">
+                            <div class="header__logo">
+                                <img src="image/revo_logo.png">
+                            </div>
+                        </div>
                     </div>
-                    <div class="header__menu-item">
-                        <a class="header__menu-item-display header__menu-item-display_active">TRANG CHỦ</a>
-                        <a class="header__menu-item-display">COFFEE</a>
-                        <a class="header__menu-item-display">PHIN MẠ MÀU</a>
-                        <a class="header__menu-item-display">COMBO PHIN PHÊ</a>
-                        <a class="header__menu-item-display">GIFTSET</a>
-                        <a class="header__menu-item-display">LIÊN HỆ</a>
+                    <div class="header__content-center"></div>
+                    <div class="header__content-right">
+                        <div class="header__menu">
+                            <div class="header__cart">
+                                <img src="image/cart.png">
+                            </div>
+                            <div class="header__menu-item">
+                                <a class="header__menu-item-display header__menu-item-display_active">TRANG CHỦ</a>
+                                <a class="header__menu-item-display">COFFEE</a>
+                                <a class="header__menu-item-display">PHIN MẠ MÀU</a>
+                                <a class="header__menu-item-display">COMBO PHIN PHÊ</a>
+                                <a class="header__menu-item-display">GIFTSET</a>
+                                <a class="header__menu-item-display">LIÊN HỆ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__title">
+                        <p class="header__h1">&nbspYOUR<br><span
+                                class="header__h1_back-color">&nbspPERSONALIZED&nbsp</span><br>&nbspCOFFEE</p>
+                    </div>
+                    <div class="header__button-play">
+                        <!-- Use a button to pause/play the video with JavaScript -->
+                        <img src="image/BTN_PLAY.png" id="myBtn" onclick="myFunction()">
                     </div>
                 </div>
-                <div class="header__title">
-                    <p class="header__h1">&nbspYOUR<br><span class="header__h1_back-color">&nbspPERSONALIZED&nbsp</span><br>&nbspCOFFEE</p>
-                </div>    
             </div>
-            
+
         </header>
         <!--End header-->
 
+        <!-- Start Personalized -->
+        <section class="container  personalized">
+            <div class="main-content">
+                <div class="headline">
+                    <p class="headline__title">Your Personalized Coffee</p>
+                    <p class="headline__h2">COFFEE BUILD YOUR BASE</p>
+                </div>
+                <div class="features">
+                    <div class="feature-item">
+                        <img class="feature-item__image" src="image/ic_1.png">
+                        <p class="feature-item__title item-title">Nguồn gốc</p>
+                        <p class="feature-item__description">Những hạt cà phê Arabica, Robusta đạt chất lượng theo tiêu
+                            chuẩn quốc tế.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img class="feature-item__image" src="image/ic_2.png">
+                        <p class="feature-item__title item-title">Chất lượng</p>
+                        <p class="feature-item__description">Từng một hạt cà phê là cả một quá trình tập trung cao độ
+                            của nghệ nhân cà phê.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img class="feature-item__image" src="image/ic_3.png">
+                        <p class="feature-item__title item-title">Các loại hạt</p>
+                        <p class="feature-item__description">70% chất lượng tách cà phê đến từ nguồn gốc và chất lượng
+                            green bean.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img class="feature-item__image" src="image/ic_4.png">
+                        <p class="feature-item__title item-title">Pha chế</p>
+                        <p class="feature-item__description">Những hạt cà phê được lột xác qua quá trình rang xay kỹ
+                            lưỡng và nghiêm ngặt.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Personalized -->
 
-        
+        <!-- Start Chuan -->
+        <section class="container container_chuan">
+            <div class="chuan__data">
+                <!-- Фон будет абсолютно спозиционирован относительно chuan__data -->
+                <div class="chuan__background">
+                    <div class="chuan__background_left"></div>
+                    <div class="chuan__background_right"></div>
+                </div>
+                <!-- Контент будет абсолютно спозиционирован относительно chuan__data -->
+                <div class="button-slider" ><img src="image/btn_slider.png"></div>
+                <div class="chuan__content">
+                    <div class="headline headline_chuan">
+                        <p class="headline__title">Your Personalized Coffee</p>
+                        <p class="headline__h2">COMBO PHIN PHÊ</p>
+                    </div>
+                    <div class="chuan__slider chuan__slider-up">
+                        
+                        <div class="chuan__block">
+                            <div class="chuan__block-image">
+                                <img class="block-img" src="image/product_image_1.png">
+                            </div>
+                            <div class="chuan__block-title">
+                                <p class="price">99.000</p>
+                                <p class="product-name item-title">REVO Morning</p>
+                                <p class="product-title feature-item__description">đắng, hậu ngọt, hương hoa </p>
+                                <div class="buttons-pay">
+                                    <button class="mua">MUA NGAY</button>
+                                    <button class="chi">CHI TIẾT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chuan__block">
+                            <div class="chuan__block-image">
+                                <img class="block-img" src="image/product_image_2.png">
+                            </div>
+                            <div class="chuan__block-title">
+                                <p class="price">85.000</p>
+                                <p class="product-name item-title">REVO Everyday</p>
+                                <p class="product-title feature-item__description">đắng, hậu ngọt, hương hoa </p>
+                                <div class="buttons-pay">
+                                    <button class="mua">MUA NGAY</button>
+                                    <button class="chi">CHI TIẾT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chuan__block">
+                            <div class="chuan__block-image">
+                                <img class="block-img" src="image/product_image_1.png">
+                            </div>
+                            <div class="chuan__block-title">
+                                <p class="price">99.000</p>
+                                <p class="product-name item-title">REVO Morning</p>
+                                <p class="product-title feature-item__description">đắng, hậu ngọt, hương hoa </p>
+                                <div class="buttons-pay">
+                                    <button class="mua">MUA NGAY</button>
+                                    <button class="chi">CHI TIẾT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chuan__slider chuan__slider-down">
+                        <div class="chuan__block">
+                            <div class="chuan__block-image">
+                                <img class="block-img" src="image/product_image_3.png">
+                            </div>
+                            <div class="chuan__block-title">
+                                <p class="price">139.000</p>
+                                <p class="product-name item-title">REVO Origin</p>
+                                <p class="product-title feature-item__description">đắng, hậu ngọt, hương hoa </p>
+                                <div class="buttons-pay">
+                                    <button class="mua">MUA NGAY</button>
+                                    <button class="chi">CHI TIẾT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chuan__block">
+                            <div class="chuan__block-image">
+                                <img class="block-img" src="image/product_image_4.png">
+                            </div>
+                            <div class="chuan__block-title">
+                                <p class="price">75.000</p>
+                                <p class="product-name item-title">REVO Đậm Đà</p>
+                                <p class="product-title feature-item__description">đắng, hậu ngọt, hương hoa </p>
+                                <div class="buttons-pay">
+                                    <button class="mua">MUA NGAY</button>
+                                    <button class="chi">CHI TIẾT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chuan__block">
+                            <div class="chuan__block-image">
+                                <img class="block-img" src="image/product_image_1.png">
+                            </div>
+                            <div class="chuan__block-title">
+                                <p class="price">99.000</p>
+                                <p class="product-name item-title">REVO Morning</p>
+                                <p class="product-title feature-item__description">đắng, hậu ngọt, hương hoa </p>
+                                <div class="buttons-pay">
+                                    <button class="mua">MUA NGAY</button>
+                                    <button class="chi">CHI TIẾT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- End Chuan -->
+
+
+
 
         <!--Start Footer-->
         <footer>
-            
+
         </footer>
         <!--End Footer-->
         <script src="scripts/btn.js"></script>
