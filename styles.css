@@ -262,7 +262,7 @@
   font-size: 2rem;
   color: #415167;
   margin-top: 0;
-  margin-bottom: 6rem;
+  margin-bottom: 4.5rem;
 }
 .feature-item {
   display: flex;
@@ -387,20 +387,22 @@
   font-size: 1.25rem;
   color: #C7A17A;
   margin-bottom: 0.5rem;
+  margin-top: 1rem;
 }
 .product-name {
   margin-top: 0;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 .product-title {
   margin-left: 0;
   margin-right: auto;
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .buttons-pay {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .mua,
 .chi {
@@ -512,6 +514,7 @@
   background-color: #FFFFFF;
   width: 70%;
   height: 100%;
+  box-shadow: 1px 0px 3px 0px rgba(0, 0, 0, 0.2);
 }
 .giftset__cart-background-3 {
   width: 10%;
@@ -522,39 +525,89 @@
   display: flex;
   flex-direction: row;
   z-index: 7;
+  height: 490px;
 }
 .cart__icon {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 32px;
 }
 .cart__icon-desc {
   display: flex;
   flex-direction: row;
 }
+.cart__desc {
+  display: flex;
+  flex-direction: column;
+}
+.product-title {
+  text-align: left;
+}
+.cart__icon-roast-img,
+.cart__icon-origin-img {
+  height: 40px;
+  width: 40px;
+  margin-right: 16px;
+}
+.cart__icon-origin-desc-think {
+  font-family: 'Nunito-Regular';
+  font-size: 1rem;
+  color: #415167;
+}
+.cart__icon-origin-desc-bold,
+.cart__icon-origin-desc-think {
+  font-family: 'Nunito-Regular';
+  font-size: 1rem;
+  color: #415167;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .giftset__cart-bookmark1 {
-  width: 10%;
-  height: 33%;
-  background-color: #DADADA;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: FFFFFF;
+  font-family: 'Montserrat-ExtraBold';
+  font-size: 2rem;
+  color: #415167;
+  text-align: center;
+  vertical-align: middle;
+  flex-grow: 1;
 }
 .giftset__cart-bookmark2,
 .giftset__cart-bookmark3 {
   box-sizing: border-box;
-  padding: 10px;
-  width: 10%;
-  height: 33%;
+  width: 100%;
+  background-color: #EDF0F5;
+  font-family: 'Montserrat-ExtraBold';
+  font-size: 2rem;
+  color: #415167;
+  text-align: center;
+  flex-grow: 1;
 }
 .giftset__cart-img,
-.giftset__cart-data,
+.giftset__cart-data-cover,
 .giftset__cart-nav {
   z-index: 7;
 }
 .giftset__cart-img {
   width: 50%;
 }
-.giftset__cart-data {
+.giftset__cart-data-cover {
   margin-top: 45px;
   width: 40%;
+  padding-right: 2rem;
+}
+.giftset__cart-data {
+  width: 100%;
 }
 .giftset__cart-nav {
+  display: flex;
+  flex-direction: column;
   width: 10%;
+  flex-grow: 1;
+}
+.bookmark__num {
+  margin-top: 4rem;
+  margin-bottom: 0;
 }
